@@ -1,0 +1,60 @@
+\documentclass{article}
+
+\usepackage{url}
+\def\UrlBreaks{\do\/\do-}
+\usepackage{breakurl}
+
+\usepackage{xcolor,soul}
+\usepackage{bibentry}
+\makeatletter\let\saved@bibitem\@bibitem\makeatother
+\usepackage[breaklinks]{hyperref}
+\makeatletter\let\@bibitem\saved@bibitem\makeatother
+
+\title{Publications list}
+
+\definecolor{lightcyan}{rgb}{0.88, 1.0, 1.0}
+\definecolor{lightskyblue}{rgb}{0.53, 0.81, 0.98}
+\definecolor{mayablue}{rgb}{0.45, 0.76, 0.98}
+\definecolor{mediumturquoise}{rgb}{0.28, 0.82, 0.8}
+\definecolor{mountainmeadow}{rgb}{0.19, 0.73, 0.56}
+\definecolor{ochre}{rgb}{0.8, 0.47, 0.13}
+
+\begin{document}
+\maketitle
+
+\nobibliography{main.bib}
+\bibliographystyle{unsrt}
+  \section*{THESES}
+  \begin{enumerate}
+    \item \colorbox{ochre}{PhD THESIS} \bibentry{skmthesis}
+    \item \colorbox{ochre}{MASTER THESIS} \bibentry{skmmasterthesis}
+  \end{enumerate}
+
+
+  \section*{PROCEEDINGS}
+  \begin{enumerate}
+    \item \colorbox{mayablue}{WORKSHOP} \bibentry{SEHSKM}
+    \item \colorbox{mayablue}{CONFERENCE} \bibentry{MukhiyaICTH}
+    \item \colorbox{mayablue}{CONFERENCE} \bibentry{nordberg2019designing}
+    \item \colorbox{mayablue}{CONFERENCE} \bibentry{CBMSSKM}
+    \item \colorbox{mayablue}{CONFERENCE} \bibentry{ahmed2020efficient}
+  \end{enumerate}
+  
+  \section*{JOURNALS}
+  \begin{enumerate}
+    \item \bibentry{IEEEACCESSSKM}
+    \item \bibentry{JMIRSKM}
+    \item \bibentry{Ahmed2021}
+    \item \bibentry{SKMTES}
+    \item \bibentry{SKMSAGE}
+  \end{enumerate}
+  
+  \section*{BOOKS \& BOOK CHAPTERS}
+  \begin{enumerate}
+      \item \colorbox{mountainmeadow}{BOOK}  \bibentry{lee2018hands}
+      \item \colorbox{mountainmeadow}{BOOK} \bibentry{lee2020EDA}
+      \item \colorbox{mountainmeadow}{BOOK} \bibentry{lee2020REDUX}
+      \item \colorbox{mountainmeadow}{BOOK CHAPTER} \bibentry{SKMBENTHOM}
+      \item \colorbox{mountainmeadow}{BOOK CHAPTER} \bibentry{10.1007/978-3-030-39540-7_8}
+  \end{enumerate}
+\end{document}
